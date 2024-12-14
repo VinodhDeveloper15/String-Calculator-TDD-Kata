@@ -21,5 +21,11 @@ class StringCalculatorTest {
         assertEquals(3, calculator.add("1,2"));
     }
 
+    @Test
+    void testAdd_MultipleNumbers_ShouldReturnSum() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(10, calculator.add("1,2,3,4"));
+    }
+
 
 }
